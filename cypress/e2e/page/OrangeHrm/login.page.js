@@ -15,11 +15,11 @@ export class OrangeLogin {
         cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index")
     }
 
-    enterUserName(name: string) {
+    enterUserName(name) {
         this.element.userNameInput().type(name)
     }
 
-    enterPassowrd(password: string) {
+    enterPassowrd(password) {
         this.element.passwordInput().type(password, { log: false })
     }
 
@@ -47,7 +47,7 @@ export class OrangeLogin {
         })
     }
 
-    verifyInvalidLogin(invalidLogin: boolean) {
+    verifyInvalidLogin(invalidLogin) {
         if (invalidLogin === true) {
             this.element.invalidCredentials().should('exist')
         } else {
