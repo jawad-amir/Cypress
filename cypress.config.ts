@@ -14,6 +14,5 @@ export default defineConfig({
       // implement node event listeners here
       return config;
     },
-    specPattern: 'cypress/e2e/**/*.cy.{js,ts}'
   },
 });
