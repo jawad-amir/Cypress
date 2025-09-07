@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                     // Using ES6 syntax
+    "lib": ["es2015", "dom"],            // Include libraries for modern JavaScript and browser support
+    "strict": true,                      // Enable strict type checking
+    "esModuleInterop": true,             // Allow CommonJS modules to be imported as ES modules
+    "skipLibCheck": true,                // Skip type checking for libraries to speed up compilation
+    "moduleResolution": "node",          // Use Node.js style module resolution
+    "module": "commonjs",                // Output CommonJS module format
+    "resolveJsonModule": true,           // Allow importing of JSON files
+    "noImplicitAny": false,              // Allow 'any' type (useful for Cypress types)
+    "isolatedModules": true,             // Treat each file as an isolated module
+    "types": ["cypress"]                 // Include Cypress types globally
+  },
+  "include": [
+    "**/*.ts"                            // Include all TypeScript files under the e2e folder
+  ],
+  "exclude": [
+    "node_modules",                      // Exclude node_modules folder
+    "dist"                               // Exclude dist folder (if you have it)
+  ]
+}
