@@ -19,4 +19,5 @@
     "node_modules",                      // Exclude node_modules folder
     "dist"                               // Exclude dist folder (if you have it)
   ]
+  // test
 }
