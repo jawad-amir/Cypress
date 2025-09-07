@@ -20,9 +20,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Verify tsconfig.json exists
-        run: ls -la tsconfig.json
-
       - name: Run Cypress tests with ts-node support
         run: npx ts-node --transpile-only node_modules/.bin/cypress run
       
